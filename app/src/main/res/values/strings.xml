@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Vibing Player</string>
+    <string name="currently_playing">Currently Playing</string>
+    <string name="J_Cole_Album">KOD - J Cole</string>
+    <string name="Bruno_Mars_Album">Doo-Wops And Hooligans \n- Bruno Mars</string>
+    <string name="John_Legend_Album">Love in the Future - John Legend</string>
+    <string name="Avicii_Album">Stories - Avicii</string>
+
+
+</resources>
