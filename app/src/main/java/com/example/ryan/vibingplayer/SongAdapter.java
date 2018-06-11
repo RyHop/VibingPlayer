@@ -34,23 +34,23 @@ public class SongAdapter extends ArrayAdapter<songs> {
         songs currentSong = getItem(position);
 
         // Find the TextView in the list_item.xml layout with the ID version_name
-        TextView nameTextView = (TextView) listItemView.findViewById(R.id.textView1);
+        TextView songTextView = (TextView) listItemView.findViewById(R.id.textView1);
         // Get the version name from the current AndroidFlavor object and
         // set this text on the name TextView
-        nameTextView.setText(currentSong.getSongtitle());
+        songTextView.setText(currentSong.getSongtitle());
 
         // Find the TextView in the list_item.xml layout with the ID version_number
-        TextView numberTextView = (TextView) listItemView.findViewById(R.id.textView2);
+        TextView artistTextView = (TextView) listItemView.findViewById(R.id.textView2);
         // Get the version number from the current AndroidFlavor object and
         // set this text on the number TextView
-        numberTextView.setText(currentSong.getArtist());
+        artistTextView.setText(currentSong.getArtist());
 
         // Find the ImageView in the list_item.xml layout with the ID list_item_icon
         //Figuring I could also cast an imageView within the viws. The Udacity link found in the classes provided reference.
-        ImageView iconView = (ImageView) listItemView.findViewById(R.id.picture);
+        ImageView albumView = (ImageView) listItemView.findViewById(R.id.albumPicture);
         // Get the image resource ID from the current AndroidFlavor object and
         // set the image to iconView
-        iconView.setImageResource(currentSong.getAlbumCover());
+        albumView.setImageResource(currentSong.getAlbumCover());
 
         // Return the whole list item layout (containing 2 TextViews and an ImageView)
         // so that it can be shown in the ListView

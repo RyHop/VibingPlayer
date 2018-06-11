@@ -26,8 +26,6 @@
                 android:layout_height="220dp"
                 android:layout_gravity="center_horizontal"
                 android:src="@drawable/kod_album_cover"
-
-
                 />
 
             <TextView
@@ -54,7 +52,6 @@
                 android:layout_height="220dp"
                 android:layout_gravity="center_horizontal"
                 android:scaleType="centerCrop"
-
                 android:src="@drawable/doowops_hooligans_album_cover" />
 
             <TextView
@@ -79,7 +76,6 @@
                 android:layout_width="220dp"
                 android:layout_height="220dp"
                 android:layout_gravity="center_horizontal"
-
                 android:src="@drawable/love_in_the_future_album_cover" />
 
             <TextView
@@ -104,7 +100,6 @@
                 android:layout_width="220dp"
                 android:layout_height="220dp"
                 android:layout_gravity="center_horizontal"
-
                 android:src="@drawable/stories_album_cover" />
 
             <TextView

@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools">
     <ImageView
-        android:id="@+id/picture"
+        android:id="@+id/albumPicture"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_width="70dp"
@@ -13,9 +13,9 @@
         />
     <TextView
         android:id="@+id/textView1"
-        android:layout_alignTop="@id/picture"
-        android:layout_toRightOf="@+id/picture"
-        android:layout_toEndOf="@id/picture"
+        android:layout_alignTop="@id/albumPicture"
+        android:layout_toRightOf="@+id/albumPicture"
+        android:layout_toEndOf="@id/albumPicture"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="25sp"
@@ -24,8 +24,8 @@
         />
     <TextView
         android:id="@+id/textView2"
-        android:layout_toEndOf="@id/picture"
-        android:layout_toRightOf="@+id/picture"
+        android:layout_toEndOf="@id/albumPicture"
+        android:layout_toRightOf="@+id/albumPicture"
         android:layout_below="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

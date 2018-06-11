@@ -12,8 +12,6 @@ import java.util.ArrayList;
 public class Currently_Playing extends AppCompatActivity {
     // Initializing all variables to make it public throughout the class.
     Boolean whichImage;
-    String artist;
-    String song;
     int albumCover;
     ImageView albumView;
     TextView songView;
