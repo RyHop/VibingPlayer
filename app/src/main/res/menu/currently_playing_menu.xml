@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!-- "Mark Favorite", should appear as action button if possible -->
+
+    <!-- Settings, should always be in the overflow -->
+    <item android:id="@+id/menu_albums_button"
+        android:title="@string/menu_albums"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/menu_song_list_button"
+        android:title="@string/menu_song_list"
+        app:showAsAction="ifRoom"/>
+
+
+
+</menu>

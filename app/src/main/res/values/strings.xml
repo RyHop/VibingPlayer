@@ -5,6 +5,12 @@
     <string name="Bruno_Mars_Album">Doo-Wops And Hooligans \n- Bruno Mars</string>
     <string name="John_Legend_Album">Love in the Future - John Legend</string>
     <string name="Avicii_Album">Stories - Avicii</string>
+    <string name="menu_song_list">Song List</string>
+    <string name="menu_albums">Albums</string>
+    <string name="menu_currently_playing">Currently Playing</string>
+
+
+
 
 
 </resources>
