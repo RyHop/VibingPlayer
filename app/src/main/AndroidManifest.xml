@@ -11,19 +11,19 @@
         android:theme="@style/AppTheme">
 
 
-        <activity android:name=".albums_activity">
+        <activity android:name=".AlbumsActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".album_songs_activity"
-            android:parentActivityName=".albums_activity"
+        <activity android:name=".AlbumSongsActivity"
+            android:parentActivityName=".AlbumsActivity"
             />
-        <activity android:name=".currently_playing_activity"
+        <activity android:name=".CurrentlyPlayingActivity"
             android:label="@string/currently_playing"
-            android:parentActivityName="com.example.ryan.vibingplayer.album_songs_activity"
+            android:parentActivityName="com.example.ryan.vibingplayer.AlbumSongsActivity"
             >
 
 

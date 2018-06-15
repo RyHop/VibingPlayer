@@ -13,7 +13,7 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
-public class currently_playing_activity extends AppCompatActivity {
+public class CurrentlyPlayingActivity extends AppCompatActivity {
     // Initializing all variables to make it public throughout the class.
     Boolean whichImage;
     int albumCover;
@@ -70,7 +70,7 @@ public class currently_playing_activity extends AppCompatActivity {
                 //getting the song name of the one before
                 if (currentSong == 0) {
                     //Do nothing but show the user that we can't do anything.
-                    Toast.makeText(currently_playing_activity.this, "Can not go back any further",
+                    Toast.makeText(CurrentlyPlayingActivity.this, "Can not go back any further",
                             Toast.LENGTH_LONG).show();
                 } else {
                     //Show the song title that is before the Currently Playing song
@@ -102,13 +102,13 @@ public class currently_playing_activity extends AppCompatActivity {
             }
         });
 
-        //The forward button for the user to change songs_class. Similar to the back button.
+        //The forward button for the user to change SongsClass. Similar to the back button.
         forwardButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (currentSong == (allTheSongs.size() - 1)) {
                     //Do nothing but show the user that you can not go forward anymore.
-                    Toast.makeText(currently_playing_activity.this, "Can not go forward any further",
+                    Toast.makeText(CurrentlyPlayingActivity.this, "Can not go forward any further",
                             Toast.LENGTH_LONG).show();
                 } else {
                     //getting the nex song and displaying it. Also, making that the current song.
@@ -127,37 +127,32 @@ public class currently_playing_activity extends AppCompatActivity {
                 (Toolbar) findViewById(R.id.my_toolbar);
         setSupportActionBar(myChildToolbar);
 
-
-
-
-
-
-
-
     }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the currently_playing_menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.currently_playing_menu, menu);
         return true;
     }
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
 
-            //So, the Extras are set up to be received by the albums_activity or album_songs_activity that notifies them if a song is playing or there is an album picked, so the menu buttons work without crashing.
+            //So, the Extras are set up to be received by the AlbumsActivity or AlbumSongsActivity that notifies them if a song is playing or there is an album picked, so the menu buttons work without crashing.
             case R.id.menu_albums_button:
-                Intent intent = new Intent(currently_playing_activity.this,albums_activity.class);
-                intent.putExtra("weHaveASongPlaying",songPlaying);
-                intent.putExtra("currently_playing_activity_picked_album_boolean",pickedAlbum);
+                Intent intent = new Intent(CurrentlyPlayingActivity.this, AlbumsActivity.class);
+                intent.putExtra("weHaveASongPlaying", songPlaying);
+                intent.putExtra("currently_playing_activity_picked_album_boolean", pickedAlbum);
                 startActivity(intent);
 
 
                 return true;
             case R.id.menu_song_list_button:
-                Intent intent1 = new Intent(currently_playing_activity.this, album_songs_activity.class);
+                Intent intent1 = new Intent(CurrentlyPlayingActivity.this, AlbumSongsActivity.class);
                 intent1.putExtra("this", whichAlbum);
-                intent1.putExtra("weHaveASongPlaying",songPlaying);
+                intent1.putExtra("weHaveASongPlaying", songPlaying);
                 startActivity(intent1);
                 return true;
 

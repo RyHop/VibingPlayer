@@ -11,12 +11,12 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class custom_song_adapter extends ArrayAdapter<songs_class> {
+public class CustomSongAdapter extends ArrayAdapter<SongsClass> {
 
     //Udacity tutorials is a huge resource for the code below.
 
 
-    public custom_song_adapter(@NonNull Context context, ArrayList<songs_class> songs) {
+    public CustomSongAdapter(@NonNull Context context, ArrayList<SongsClass> songs) {
         super(context, 0, songs);
     }
 
@@ -31,7 +31,7 @@ public class custom_song_adapter extends ArrayAdapter<songs_class> {
         }
 
         // Get the Word object located at this position in the list
-        songs_class currentSong = getItem(position);
+        SongsClass currentSong = getItem(position);
 
         // Find the TextView in the list_item.xml layout with the ID version_name
         TextView songTextView = (TextView) listItemView.findViewById(R.id.textView1);
